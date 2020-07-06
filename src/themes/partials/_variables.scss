@@ -1,0 +1,56 @@
+@import "./css-variables.scss";
+
+//kalgudi core variables
+$icon-color-primary: var(--icon-color-primary) !important;
+$m-brand-deep-color: var(--m-primary-700) !important;
+$m-brand-light-color: var(--m-primary-300) !important;
+$m-brand-color: var(--m-primary-500) !important; // Kalgudi core primary color
+$m-brand-secondary-color: var(--m-secondary-300) !important;
+
+
+//text colors
+$m-text-primary: var(--m-text-primary);
+$m-text-secondary: var(--m-text-secondary);
+$m-text-muted: var(--m-text-muted);
+$m-text-success: var(--m-text-success);
+$m-text-accent: var(--m-accent-900); // Kalgudi core accent color
+$m-text-warn: var( --m-warn-800) !important; // Kalgudi core warn color
+
+//background colors
+$m-bg-primary: var(--m-bg-primary);
+$m-white: var(--m-white);
+$m-bg-form-color: var(--m-bg-form-color);
+$m-bg-brand-light: var(--m-primary-50) !important;
+$m-bg-warn: var(--m-warn-800) !important;
+
+//link-hover-colors
+$m-link-color: var(--m-link-color);
+$m-link-hover-color: var(--m-link-hover-color);
+
+//Border colors
+$m-border-dim: var(--m-border-dim);
+$m-brand-box: var(--m-secondary-800);
+
+//Header height
+$m-header-height: 51px;
+$m-header-icon: 22px;
+$m-header-icon-sm: 14px;
+
+// social links hover colors
+$facebook-color: var(--facebook-color);
+$instagram-color: var(--twitter-color);
+$linkedin-color: var(--linkedin-color);
+$twitter-color: var(--twitter-color);
+$whatsapp-color: var(--whatsapp-color);
+$tumblr-color: var(  --tumblr-color);
+$gmail-color: var(--gmail-color);
+
+// profile
+$mat-color: var(--m-accent-700);
+
+// icon size
+$icon-sm: 16px;
+$icon-md: 24px;
+$icon-lg:48px;
+$icon-xl: 80px;
+$icon-xxl: 160px;

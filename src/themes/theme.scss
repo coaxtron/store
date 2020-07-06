@@ -1,0 +1,67 @@
+@import "~@angular/material/theming";
+@import "./partials/css-variables";
+
+
+
+$mango-mart-primary: (
+  900: var(--m-primary-900), // Primary color (If you change this color, you have to change it in variable.scss file also)
+  800: var(--m-primary-800),
+  700: var(--m-primary-700),
+  600: var(--m-primary-600),
+  500: var(--m-primary-500),
+  400: var(--m-primary-400),
+  300: var(--m-primary-300),
+  200: var(--m-primary-200),
+  100: var(--m-primary-100),
+  50: var(--m-primary-50),
+  contrast: ()
+);
+
+$mango-mart-accent: (
+  900: var(--m-accent-900), // Accent color
+  800: var(--m-accent-800),
+  700: var(--m-accent-700),
+  600: var(--m-accent-600),
+  500: var(--m-accent-500),
+  400: var(--m-accent-400),
+  300: var(--m-accent-300),
+  200: var(--m-accent-200),
+  100: var(--m-accent-100),
+  50: var(--m-accent-50),
+  contrast: ()
+);
+
+
+$mango-mart-warn: (
+  50: var(--m-warn-50),
+  100: var(--m-warn-100),
+  200: var(--m-warn-200),
+  300: var(--m-warn-300),
+  400: var(--m-warn-400),
+  500: var(--m-warn-500),
+  600: var(--m-warn-600),
+  700: var(--m-warn-700),
+  800: var(--m-warn-800), // Warn color
+  contrast: ()
+);
+
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+
+$core-theme-primary: mat-palette($mango-mart-primary, 900);
+$core-theme-accent: mat-palette($mango-mart-accent, 900);
+// $core-primary-styles: map.get($kalgudi-core);
+
+// The warn palette is optional (defaults to red).
+$core-theme-warn: mat-palette($mango-mart-warn, 800);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$kalgudi-core-theme: mat-light-theme($core-theme-primary, $core-theme-accent, $core-theme-warn);
+
+@include angular-material-theme($kalgudi-core-theme);
+
+

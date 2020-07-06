@@ -1,0 +1,33 @@
+<mat-card fxLayout="column">
+  <div fxLayout="row" fxLayoutAlign="space-between">
+    <div class="order">
+
+      <div class="pre-order" fxLayout="row" fxLayoutAlign="center center">
+        <span fxLayoutAlign="center center">PRE ORDER</span>
+      </div>
+    </div>
+    <mat-icon class="icon ">more_horiz</mat-icon>
+  </div>
+
+  <div class="product-img mt-3" fxLayoutAlign="center center">
+
+    <img src="http://www.pngmart.com/files/8/Mango-PNG-Image-Free-Download.png" width="260">
+  </div>
+
+  <div class="product-title mt-5" fxLayout="column" fxLayoutAlign="start start">
+    <span class="title">Banganapalli Mangoes</span>
+    <p>From vikash, Rourkela, Odisha <br>770039</p>
+  </div>
+
+  <div class="buy" fxLayout="row" fxLayoutAlign="space-between center">
+    <div class="price-tag" fxLayout="row" fxLayoutAlign="center center">
+      <span class="mr-1 unit">100kg</span>/
+      <span class="ml-1 price">₹ 1000</span>
+    </div>
+
+    <div class="buy-btn" fxLayout="row" (click)="orderNow()" fxLayoutAlign="center center" fxLayoutGap="10px">
+      <mat-icon>shopping_basket</mat-icon>
+      <span fxLayoutAlign="center center" class="mt-1">BUY</span>
+    </div>
+  </div>
+</mat-card>

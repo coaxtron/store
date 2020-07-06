@@ -1,0 +1,78 @@
+.header-box {
+  background-color: #50b35a;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
+  padding: 10px 0px 10px 0px;
+  .menu {
+    display: flex;
+    margin-top: 10px;
+  }
+  .list {
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+  .list .contain:hover {
+    color: black;
+  }
+  .menu .list span {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .list li {
+    display: inline-block;
+    cursor: pointer;
+    color: white;
+    margin: 0px 20px;
+    transition: all 0.3s ease 0s;
+    vertical-align: middle;
+  }
+  .list .contain:focus {
+    outline: none;
+  }
+
+  .list .active {
+    color: #75890c;
+    outline: none;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .mobile-view {
+    display: none;
+    @media only screen and (max-width: 600px) {
+      display: block !important;
+      //       font-size: 30px;
+    }
+  }
+  .brand {
+    color: white;
+    font-weight: 500;
+  }
+  .menu-icon {
+    color: white;
+  }
+
+  .login-btn {
+    background-color: #f7f115;
+    padding: 10px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 10px;
+    @media only screen and (max-width: 600px) {
+      padding: 5px;
+      height: 25px;
+      margin-top: 0px;
+      .icon {
+        font-size: 23px;
+      }
+      .login {
+        font-size: 12px;
+      }
+    }
+  }
+}

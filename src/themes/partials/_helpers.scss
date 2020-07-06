@@ -1,0 +1,68 @@
+@import "./variables";
+.spread-absolutely {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.bg-brand {
+    background-color: $m-brand-color;
+}
+
+.bg-brand-s {
+    background-color: $m-brand-secondary-color;
+}
+
+.txt-brand {
+    color: $m-brand-color;
+}
+
+.txt-primary {
+    color: $m-text-primary;
+}
+
+.txt-secondary {
+    color: $m-brand-secondary-color;
+}
+
+.txt-muted {
+    color: $m-text-muted;
+}
+
+.txt-light-grey {
+    color: $m-text-secondary;
+}
+
+.txt-warn {
+    color: $m-text-warn;
+}
+
+.txt-white {
+    color: white;
+}
+
+.border-brand {
+    border: 2px solid $m-brand-color;
+}
+
+.flex-centering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@for $i from 0 through 30 {
+    $size: $i/16;
+    .font-#{$i} {
+        font-size: #{$size}em !important;
+    }
+}
+
+.bottom-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

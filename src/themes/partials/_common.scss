@@ -1,0 +1,16 @@
+@import "./variables";
+
+.brand-spl {
+    color: $m-text-warn;
+}
+
+.brand-light {
+    color: $m-brand-light-color;
+    @media only screen and (max-width: 600px) {
+      color: #43A047 !important;
+    }
+}
+
+.bb-warn {
+    border-bottom: 1px solid $m-text-warn;
+}

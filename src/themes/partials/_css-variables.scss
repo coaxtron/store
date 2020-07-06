@@ -1,0 +1,82 @@
+:root {
+  // Kalgudi primary color
+  --m-primary-50: #E8F5E9;
+--m-primary-100: #C8E6C9;
+--m-primary-200: #A5D6A7;
+--m-primary-300: #81C784;
+--m-primary-400: #66BB6A;
+--m-primary-500: #4CAF50;
+--m-primary-600: #43A047;
+--m-primary-700: #388E3C;
+--m-primary-800: #2E7D32;
+--m-primary-900: #1B5E20;
+
+// kalgudi secondary color
+--m-secondary-50: #FFFDE7;
+--m-secondary-100: #FFF9C4;
+--m-secondary-200: #FFF59D;
+--m-secondary-300: #faff03;
+--m-secondary-400: #FFEE58;
+--m-secondary-500: #FFEB3B;
+--m-secondary-600: #FDD835;
+--m-secondary-700: #FBC02D;
+--m-secondary-800: #F9A825;
+--m-secondary-900: #F57F17;
+
+  // Kalgudi accent color
+  --m-accent-900: #4CAF50;// Accent color
+  --m-accent-800: #4CAF50;
+  --m-accent-700: #5eb762;
+  --m-accent-600: #82c785;
+  --m-accent-500: #94cf96;
+  --m-accent-400: #a6d7a8;
+  --m-accent-300: #b7dfb9;
+  --m-accent-200: #c9e7cb;
+  --m-accent-100: #dbefdc;
+  --m-accent-50: #edf7ee;
+
+  // Kalgudi warn color
+  --m-warn-50: #ffebee;
+  --m-warn-100: #ffcdd2;
+  --m-warn-200: #ef9a9a;
+  --m-warn-300: #e57373;
+  --m-warn-400: #ef5350;
+  --m-warn-500: #f44336;
+  --m-warn-600: #e53935;
+  --m-warn-700: #d32f2f;
+  --m-warn-800: #c62828; // Warn color
+
+
+  // Kalgudi core variables
+  --icon-color-primary: #585858 !important;
+
+  //text colors
+  --m-text-primary: #1f3a56;
+  --m-text-secondary: #666;
+  --m-text-muted: #66696a;
+  --m-text-success: #43a131;
+
+  //background colors
+  --m-bg-primary: #edf2f6;
+  --m-white: #fff;
+  --m-bg-form-color: #f6f6f9;
+
+  //link-hover-colors
+  --m-link-color: #428bca;
+  --m-link-hover-color: #2a6496;
+
+  //Border colors
+  --m-border-dim: #e3e3e3;
+
+  //Header height
+  --m-header-height: 51px;
+
+  // social links hover colors
+  --facebook-color: #385898;
+  --instagram-color: #f21da0;
+  --linkedin-color: #544bc2;
+  --twitter-color: #1da1f2;
+  --whatsapp-color: #0ee00e;
+  --tumblr-color:#34526f;
+  --gmail-color:#D44638;
+}

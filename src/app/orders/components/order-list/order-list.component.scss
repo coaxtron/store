@@ -1,0 +1,66 @@
+mat-card{
+  background-color: white;
+ width: 900px;
+  border-radius: 0px !important;
+  padding: 20px 30px !important;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+   padding: 2px 1px !important;
+   border: 1px solid aliceblue;
+  }
+img{
+  max-width: 100%;
+  height: auto;
+  @media only screen and (max-width:600px) {
+    max-width: 70%;
+  }
+}
+  .product-title,.quantity{
+    .title{
+      font-size: 16px;
+      color: #2C5C51;
+      font-weight: 500;
+    }
+    p{
+      font-size: 13px;
+      color: #7F9B87;
+      font-weight: 400;
+    }
+    @media only screen and (max-width: 600px) {
+      margin-left: -10px;
+      .title{
+        font-size: 12px;
+        // white-space: nowrap;
+        line-height: 15px;
+        margin-bottom: 0px;
+        width: min-content;
+      }
+      p{
+        font-size: 10px;
+        line-height: 15px;
+      }
+     }
+  }
+  .cancel{
+    background-color: #95B79F !important;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    @media only screen and (max-width: 600px) {
+      padding: 2px 5px !important;
+      font-size: 10px;
+      margin-left:10px;
+     }
+  }
+  .order-track{
+    background-color: #38B35A !important;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    @media only screen and (max-width: 600px) {
+      padding: 2px 5px !important;
+      font-size: 10px;
+      white-space: nowrap;
+     }
+  }
+}
