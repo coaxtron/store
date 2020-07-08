@@ -1,5 +1,7 @@
+@import "partials/variables";
+
 mat-card{
-  background-color: white;
+  background-color: $m-white;
  width: 900px;
   border-radius: 0px !important;
   padding: 20px 30px !important;
@@ -18,12 +20,12 @@ img{
   .product-title,.quantity{
     .title{
       font-size: 16px;
-      color: #2C5C51;
+      color: $m-text-primary;
       font-weight: 500;
     }
     p{
       font-size: 13px;
-      color: #7F9B87;
+      color: $m-text-secondary;
       font-weight: 400;
     }
     @media only screen and (max-width: 600px) {
@@ -42,8 +44,8 @@ img{
      }
   }
   .cancel{
-    background-color: #95B79F !important;
-    color: white;
+    background-color: $m-text-secondary !important;
+    color: $m-white;
     font-size: 14px;
     font-weight: 500;
     @media only screen and (max-width: 600px) {
@@ -53,8 +55,8 @@ img{
      }
   }
   .order-track{
-    background-color: #38B35A !important;
-    color: white;
+    background-color: $m-brand-color;
+    color:$m-white;
     font-size: 14px;
     font-weight: 500;
     @media only screen and (max-width: 600px) {

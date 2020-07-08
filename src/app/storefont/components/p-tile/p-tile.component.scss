@@ -1,3 +1,5 @@
+@import "partials/variables";
+
 mat-card {
   border-radius: 0px !important;
   max-width: 300px;
@@ -5,7 +7,7 @@ mat-card {
 
   .order {
     .pre-order {
-      background-color: #f7f115;
+      background-color: $m-brand-secondary-color;
       padding: 10px;
       font-weight: 400;
       height: 35px;
@@ -13,10 +15,12 @@ mat-card {
       right: 25px;
       cursor: pointer;
       margin-top: 15px;
+      box-shadow: 3px 2px 0px rgba(0, 0, 0, 0.11);
       @media only screen and (max-width: 600px) {
+
         padding: 5px;
-        height: 25px;
-        margin-top: 0px;
+    height: 30px;
+    margin-top: 15px;
         .icon {
           font-size: 23px;
         }
@@ -27,7 +31,7 @@ mat-card {
     }
   }
   .icon {
-    color: #bdbdbd;
+    color: $icon-color;
     font-size: 45px;
   }
   .product-title {
@@ -35,41 +39,41 @@ mat-card {
     .title {
       font-style: medium;
       font-size: 16px;
-      color: #2c5c51;
+      color: $m-text-primary;
     }
     p {
       font-style: (mixed);
       font-size: 13px;
 
-      color: #7f9b87;
+      color: $m-text-secondary;
     }
   }
   .buy {
     align-items: center !important;
     margin-bottom: 30px;
     .price-tag {
-      border: 1px solid #2c5c51;
+      border: 1px solid $m-text-primary;
       height: fit-content;
-      padding: 5px;
+      padding: 3px;
       .unit {
-        color: #7f9b87;
+        color: $m-text-secondary;
       }
       .price {
-        color: #2c5c51;
+        color: $m-text-primary;
       }
     }
   }
 
   .buy-btn {
-    background-color: #38b25a;
+    background-color: $m-brand-color;
     padding: 15px;
     height: 45px;
     cursor: pointer;
-    color: white;
+    color: $m-white;
     @media only screen and (max-width: 600px) {
-      padding: 5px;
-      height: 25px;
-      margin-top: 0px;
+      padding: 10px;
+      height: 40px;
+      margin-top: -5px;
       .icon {
         font-size: 23px;
       }

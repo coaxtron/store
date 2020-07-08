@@ -1,34 +1,11 @@
-<!-- <div>
-  <ng-container *ngIf="userdata;then loggedInList else notLoggedInList"></ng-container>
 
-  <ng-template #notLoggedInList>
-      <div class="profile-info" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
-          <img width="50" class="profile-img" src="assets/icons/icon-192x192.png" />
-      </div>
-      <a mat-list-item (click)="toggelSidenav()" routerLink="/auth/signup"><i class="las la-user-plus"></i> Join us</a>
-      <a mat-list-item (click)="toggelSidenav()" routerLink="/auth/login"><i class="las la-sign-in-alt"></i> Login</a>
-  </ng-template>
-
-  <ng-template #loggedInList>
-      <div class="profile-info" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
-          <img width="50" class="profile-img" [src]="userdata?.profilePicUrl" />
-          <div>
-             vikash kumar
-          </div>
-      </div>
-      <a mat-list-item (click)="toggelSidenav()" routerLink="/profile"> <i class="lar la-user-circle"></i> Profile </a>
-      <a mat-list-item (click)="toggelSidenav()" routerLink="/profile/orders"> <i class="las la-gift"></i> My orders </a>
-      <a mat-list-item (click)="toggelSidenav()" routerLink="/profile/received-quotes"> <i class="las la-book"></i>Quotes received </a>
-      <a mat-list-item (click)="toggelSidenav()" routerLink="/profile/sent-enquires"> <i class="las la-bullhorn"></i>Sent enquires </a>
-      <a mat-list-item (click)="toggelSidenav();"><i class="las la-sign-out-alt"></i> Logout </a>
-  </ng-template>
-
-</div> -->
-
-<div class="side-nav" fxLayout="column">
+<!-- Start side nav -->
+<aside class="side-nav" fxLayout="column">
 <div class="profile-info" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
   <img width="50" class="profile-img" src="https://lh3.googleusercontent.com/proxy/OPssseFMkthwVEzIftu4-9Se3TOyyjWQjhHWoyj8zyqgoVUR5DvBeNo1a02ao-7m0Nc-BhvH36c2sPT_D57W2w" />
 </div>
 <a class="list-group-item" (click)="toggelSidenav()" routerLink="/auth/signup"><i class="las la-user-plus"></i> Join us</a>
 <a class="list-group-item" (click)="toggelSidenav()" routerLink="/auth/login"><i class="las la-sign-in-alt"></i> Login</a>
-</div>
+<a class="list-group-item" (click)="toggelSidenav()" routerLink="/"><i class="las la-home"></i> Join us</a>
+</aside>
+<!-- Ends side nav -->

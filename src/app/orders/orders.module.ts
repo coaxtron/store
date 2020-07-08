@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 import { OrdersComponent } from './components/orders/orders.component';
 import { OrdersRoutingModule } from './orders-routing.module';
 import { OrderListComponent } from './components/order-list/order-list.component';
-import { MatCardModule } from '@angular/material/card';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { MaterialModule } from '../material/material.module';
 
 
 
@@ -13,8 +12,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [
     CommonModule,
     OrdersRoutingModule,
-    MatCardModule,
-    FlexLayoutModule
+    MaterialModule
   ]
 })
 export class OrdersModule { }

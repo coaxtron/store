@@ -1,5 +1,7 @@
+@import "partials/variables";
+
 .header-box {
-  background-color: #50b35a;
+  background-color: $m-brand-color;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
   padding: 10px 0px 10px 0px;
   .menu {
@@ -21,7 +23,7 @@
   .list li {
     display: inline-block;
     cursor: pointer;
-    color: white;
+    color: $m-white;
     margin: 0px 20px;
     transition: all 0.3s ease 0s;
     vertical-align: middle;
@@ -31,7 +33,7 @@
   }
 
   .list .active {
-    color: #75890c;
+    color: $m-text-success;
     outline: none;
   }
 
@@ -50,15 +52,15 @@
     }
   }
   .brand {
-    color: white;
+    color: $m-white;
     font-weight: 500;
   }
   .menu-icon {
-    color: white;
+    color: $m-white;
   }
 
   .login-btn {
-    background-color: #f7f115;
+    background-color: $m-brand-secondary-color;
     padding: 10px;
     height: 35px;
     cursor: pointer;

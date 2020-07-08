@@ -1,4 +1,9 @@
+@import "partials/variables";
+
 .order-tile{
-  background-color: #ebfcf0;
+  background-color: $m-bg-primary;
   padding: 50px 0px;
+  @media only screen and (max-width: 600px) {
+    padding: 10px 0px;
+  }
 }

@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
+/*
+ It is used for order list tile
+  */
+
 @Component({
   selector: 'app-order-list',
   templateUrl: './order-list.component.html',

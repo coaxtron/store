@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+/*
+ It is used to show list of order
+  */
 @Component({
   selector: 'app-orders',
   templateUrl: './orders.component.html',

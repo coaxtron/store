@@ -1,3 +1,4 @@
+@import "partials/variables";
 
 .side-nav{
   padding-top: 0px !important;
@@ -12,7 +13,7 @@
       margin-right: 10px;
   }
   .profile-info{
-      background-color: #f7af32;
+      background-color: $m-brand-secondary-color;
       padding: 15px;
 
   }

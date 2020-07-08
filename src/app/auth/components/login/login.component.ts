@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
-// import { MatDialog } from '@angular/material/dialog';
 import { SingupComponent } from '../singup/singup.component';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+
+ /*
+ It is used for login page
+  */
 
 @Component({
   selector: 'app-login',

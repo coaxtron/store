@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 
+/*
+ It is used for order form
+  */
+
 @Component({
   selector: 'app-order-form',
   templateUrl: './order-form.component.html',

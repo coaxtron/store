@@ -3,6 +3,10 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { MatDialogRef, MatDialog } from '@angular/material/dialog';
 import { LoginComponent } from '../login/login.component';
 
+/*
+ It is used for singup page
+  */
+
 @Component({
   selector: 'app-singup',
   templateUrl: './singup.component.html',

@@ -2,6 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { OrderFormComponent } from '../order-form/order-form.component';
 
+/*
+ It is used for product tile for one product
+  */
+
 @Component({
   selector: 'app-p-tile',
   templateUrl: './p-tile.component.html',

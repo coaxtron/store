@@ -5,7 +5,7 @@
 --m-primary-200: #A5D6A7;
 --m-primary-300: #81C784;
 --m-primary-400: #66BB6A;
---m-primary-500: #4CAF50;
+--m-primary-500: #50b35a;
 --m-primary-600: #43A047;
 --m-primary-700: #388E3C;
 --m-primary-800: #2E7D32;
@@ -15,7 +15,7 @@
 --m-secondary-50: #FFFDE7;
 --m-secondary-100: #FFF9C4;
 --m-secondary-200: #FFF59D;
---m-secondary-300: #faff03;
+--m-secondary-300: #f7f115;
 --m-secondary-400: #FFEE58;
 --m-secondary-500: #FFEB3B;
 --m-secondary-600: #FDD835;
@@ -51,13 +51,13 @@
   --icon-color-primary: #585858 !important;
 
   //text colors
-  --m-text-primary: #1f3a56;
-  --m-text-secondary: #666;
+  --m-text-primary: #2c5c51;
+  --m-text-secondary: #7f9b87;
   --m-text-muted: #66696a;
   --m-text-success: #43a131;
 
   //background colors
-  --m-bg-primary: #edf2f6;
+  --m-bg-primary: #ebfcf0;
   --m-white: #fff;
   --m-bg-form-color: #f6f6f9;
 
@@ -67,6 +67,9 @@
 
   //Border colors
   --m-border-dim: #e3e3e3;
+
+  //Icon colors
+  --m-icon-color: #bdbdbd;
 
   //Header height
   --m-header-height: 51px;

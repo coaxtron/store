@@ -1,5 +1,10 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
+
+/*
+ It is used for mobile view side nav
+  */
+
 @Component({
   selector: 'app-sidenav',
   templateUrl: './sidenav.component.html',

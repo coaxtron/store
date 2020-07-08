@@ -1,6 +1,10 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import { LoginComponent } from 'src/app/auth/components/login/login.component';
+
+/*
+ It is used for header
+  */
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',

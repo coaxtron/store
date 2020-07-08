@@ -1,46 +1,36 @@
-<section fxLayout="column" >
-  <!-- <div class="profile-info" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
-    <img width="200" class="profile-img" src="https://lh3.googleusercontent.com/proxy/OPssseFMkthwVEzIftu4-9Se3TOyyjWQjhHWoyj8zyqgoVUR5DvBeNo1a02ao-7m0Nc-BhvH36c2sPT_D57W2w" />
-  </div> -->
-  <form [formGroup]="signupForm" >
+ <!-- Start Signup  -->
+<section fxLayout="column">
+  <!-- Signup Form -->
+  <form [formGroup]="signupForm">
     <div class="example-container" fxLayout="column">
       <h2 style="font-weight: 100; text-align: center;">Please Register</h2>
-
       <mat-form-field appearance="outline">
         <mat-label>NAME</mat-label>
-        <input matInput  placeholder="Name" type="text" formControlName="name">
+        <input matInput placeholder="Name" type="text" formControlName="name">
         <mat-icon matSuffix>person</mat-icon>
-
       </mat-form-field>
-
       <mat-form-field appearance="outline">
         <mat-label>EMAIL ID</mat-label>
-        <input matInput   placeholder="Email" type="email" formControlName="email">
+        <input matInput placeholder="Email" type="email" formControlName="email">
         <mat-icon matSuffix>email</mat-icon>
-
       </mat-form-field>
-
       <mat-form-field appearance="outline">
         <mat-label>MOBILE NUMBER</mat-label>
-        <input matInput  placeholder="Mobile Number" type="number" formControlName="mobileNumber">
+        <input matInput placeholder="Mobile Number" type="number" formControlName="mobileNumber">
         <mat-icon matSuffix>phone</mat-icon>
-
       </mat-form-field>
-
       <mat-form-field appearance="outline">
         <mat-label>PASSWORD</mat-label>
-        <input matInput  placeholder="Password" type="password" formControlName="password">
+        <input matInput placeholder="Password" type="password" formControlName="password">
         <mat-icon matSuffix>vpn_key</mat-icon>
-
       </mat-form-field>
-
-
       <button class="btn-save">Register</button>
-
       <div class="login">
         <span>Already have an account?</span>
         <span class="btn btn-link cursor" (click)="onLoginClick()">Log in</span>
+      </div>
     </div>
-    </div>
-    </form>
+  </form>
+  <!-- Signup Form -->
 </section>
+ <!-- Ends Signup-->
