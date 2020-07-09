@@ -1,34 +1,34 @@
 <!-- Start Order Form -->
 <section fxLayout="column">
   <!-- Order Form -->
-  <form [formGroup]="orderform">
+  <form [formGroup]="orderform" (ngSubmit)="save()">
     <div class="example-container" fxLayout="column" fxLayoutAlign="center">
       <h2>ORDER NOW</h2>
       <div fxLayout="row" fxLayoutGap="10px">
         <mat-form-field appearance="outline" fxFlex="70%">
           <mat-label>MANGOES</mat-label>
-          <input matInput placeholder="Mangoes">
+          <input matInput placeholder="Mangoes" formControlName="productname">
         </mat-form-field>
         <mat-form-field appearance="outline" fxFlex="30%">
           <mat-label>QUANTITY</mat-label>
-          <input matInput placeholder="Quantity">
+          <input matInput placeholder="Quantity" formControlName="quantity">
         </mat-form-field>
       </div>
       <mat-form-field appearance="outline">
         <mat-label>NAME</mat-label>
-        <input matInput placeholder="Name">
+        <input matInput placeholder="Name" formControlName="name">
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>EMAIL ID</mat-label>
-        <input matInput placeholder="Email Id">
+        <input matInput placeholder="Email Id" formControlName="email">
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>MOBILE</mat-label>
-        <input matInput placeholder="Mobile">
+        <input matInput placeholder="Mobile" formControlName="mobile">
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>ADDRESS</mat-label>
-        <textarea matInput cdkTextareaAutosize placeholder="Address" #autosize="cdkTextareaAutosize"
+        <textarea matInput cdkTextareaAutosize placeholder="Address" formControlName="address" #autosize="cdkTextareaAutosize"
           cdkAutosizeMinRows="3" cdkAutosizeMaxRows="5"></textarea>
       </mat-form-field>
       <span class="mt-2 mode">Select Payment Mode</span>
@@ -46,7 +46,7 @@
       </div>
     </div>
     <div fxLayoutAlign="center center" class="mt-4 mb-2">
-      <button routerLink="/orders" class="btn-save" (click)="checkOut()">Checkout Now</button>
+      <button routerLink="/orders" class="btn-save"  (click)="checkOut()">Checkout Now</button>
     </div>
   </form>
   <!-- Order Form -->

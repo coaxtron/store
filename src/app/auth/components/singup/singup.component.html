@@ -1,7 +1,7 @@
  <!-- Start Signup  -->
 <section fxLayout="column">
   <!-- Signup Form -->
-  <form [formGroup]="signupForm">
+  <form [formGroup]="signupForm" (ngSubmit)="save()">
     <div class="example-container" fxLayout="column">
       <h2 style="font-weight: 100; text-align: center;">Please Register</h2>
       <mat-form-field appearance="outline">

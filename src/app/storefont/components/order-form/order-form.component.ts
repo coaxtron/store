@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, FormBuilder } from '@angular/forms';
+import { FormControl, FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';
 
 /*
@@ -13,22 +13,31 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class OrderFormComponent implements OnInit {
   orderform = new FormGroup({
-
+    productname: new FormControl(''),
+    quantity: new FormControl(''),
+    name: new FormControl(''),
+    mobile: new FormControl(''),
     email: new FormControl(''),
-    password: new FormControl('')
+    address: new FormControl('')
   });
   constructor(private fb: FormBuilder,public dialogRef: MatDialogRef<OrderFormComponent>)
      { }
 
   ngOnInit(): void {
     this.orderform = this.fb.group({
-      mobileNumber: [''],
-      password: ['']
+      productname: ['',Validators.required],
+      quantity: ['',Validators.required],
+      name: ['',Validators.required],
+      mobile: ['',Validators.required],
+      email: ['',Validators.required],
+      address: ['',Validators.required]
     })
   }
 
   checkOut(){
     this.dialogRef.close();
   }
-
+  save(){
+    console.log(this.orderform.value)
+  }
 }

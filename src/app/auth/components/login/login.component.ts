@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
+import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { SingupComponent } from '../singup/singup.component';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 
@@ -21,9 +21,12 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.fb.group({
-      mobileNumber: [''],
-      password: ['']
+      email: ['',Validators.required],
+      password: ['',Validators.required ]
     })
+  }
+  save(){
+    console.log(this.loginForm.value)
   }
 
   openSignup() {
@@ -32,5 +35,7 @@ export class LoginComponent implements OnInit {
     });
     this.dialogRef.close();
   }
-
+  // login(){
+  //   console.log(this.loginForm.value)
+  // }
 }

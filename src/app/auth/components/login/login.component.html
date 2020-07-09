@@ -4,21 +4,21 @@
     <img width="200" class="profile-img" src="https://image.flaticon.com/icons/png/512/64/64572.png" />
   </div>
   <!-- Login Form -->
-  <form [formGroup]="loginForm">
+  <form [formGroup]="loginForm" (ngSubmit)="save()">
     <div class="example-container" fxLayout="column">
       <h2 style="font-weight: 100; text-align: center;">Please sign in</h2>
       <mat-form-field appearance="outline">
         <mat-label>EMAIL ID</mat-label>
-        <input matInput placeholder="Email Id">
+        <input matInput placeholder="Email Id" formControlName="email">
         <mat-icon matSuffix>email</mat-icon>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>PASSWORD</mat-label>
-        <input matInput placeholder="Password">
+        <input matInput placeholder="Password" formControlName="password">
         <mat-icon matSuffix>vpn_key</mat-icon>
       </mat-form-field>
       <div fxLayoutAlign="center center">
-        <button class="btn-save login-btn">LOGIN</button>
+        <button  type="submit" class="btn-save login-btn">LOGIN</button>
       </div>
       <label style="text-align: center; margin-top: 5px; color:gray">Or</label>
       <div fxLayoutAlign="center center">

@@ -1,10 +1,17 @@
 @import "partials/variables";
 
+img{
+  max-width: 100%;
+  height: auto;
+}
 mat-card {
   border-radius: 0px !important;
   max-width: 300px;
   padding: 0px 24px 0px 24px !important;
-
+  @media only screen and (max-width: 600px) {
+    max-width: 175px;
+    padding: 0px 12px 0px 12px !important;
+  }
   .order {
     .pre-order {
       background-color: $m-brand-secondary-color;
@@ -17,10 +24,10 @@ mat-card {
       margin-top: 15px;
       box-shadow: 3px 2px 0px rgba(0, 0, 0, 0.11);
       @media only screen and (max-width: 600px) {
-
         padding: 5px;
     height: 30px;
     margin-top: 15px;
+    right: 13px;
         .icon {
           font-size: 23px;
         }
@@ -33,9 +40,13 @@ mat-card {
   .icon {
     color: $icon-color;
     font-size: 45px;
+    @media only screen and (max-width: 600px) {
+      font-size: 25px;
+    }
   }
   .product-title {
     font-family: Poppins;
+    margin-top:40px;
     .title {
       font-style: medium;
       font-size: 16px;
@@ -46,6 +57,9 @@ mat-card {
       font-size: 13px;
 
       color: $m-text-secondary;
+    }
+    @media only screen and (max-width: 600px) {
+      margin-top: 10px;
     }
   }
   .buy {
@@ -62,6 +76,13 @@ mat-card {
         color: $m-text-primary;
       }
     }
+    @media only screen and (max-width: 600px) {
+      margin-top: 10px;
+      font-size: 9px;
+      mat-icon{
+        font-size: 25px;
+      }
+    }
   }
 
   .buy-btn {
@@ -72,10 +93,12 @@ mat-card {
     color: $m-white;
     @media only screen and (max-width: 600px) {
       padding: 10px;
-      height: 40px;
-      margin-top: -5px;
-      .icon {
-        font-size: 23px;
+      height: 30px;
+      margin-right: 0px !important;
+      // margin-top: -5px;
+      mat-icon {
+        font-size: 20px;
+
       }
       .login {
         font-size: 12px;

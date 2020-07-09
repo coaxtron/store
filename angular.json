@@ -29,7 +29,6 @@
             ],
             "styles": [
               "src/styles.scss",
-              "styles-app-loading.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/themes/theme.scss"
             ],

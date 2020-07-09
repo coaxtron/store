@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { OrderFormComponent } from '../order-form/order-form.component';
 
@@ -13,6 +13,7 @@ import { OrderFormComponent } from '../order-form/order-form.component';
 })
 export class PTileComponent implements OnInit {
 
+  @Input() inStock : boolean;
   constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
