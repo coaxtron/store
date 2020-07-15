@@ -84,6 +84,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   padding: 10px 30px;
   background-color: #FFE600;
   cursor: pointer;
+  outline: none !important;
 }
 
 
+// mat-drawer-content{
+//   height: 100% !important;
+// }

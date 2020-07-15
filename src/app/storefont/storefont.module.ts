@@ -10,8 +10,11 @@ import { ProductViewComponent } from './components/product-view/product-view.com
 import { OrderFormComponent } from './components/order-form/order-form.component';
 import { OrdersModule } from '../orders/orders.module';
 import { MaterialModule } from '../material/material.module';
+import { OrderService } from '../storefont/services/order.service';
+import { ProductService } from '../storefont/services/product.service';
+import { ProductFullViewComponent } from './components/product-full-view/product-full-view.component';
 @NgModule({
-  declarations: [HomeComponent, SidenavComponent, HeaderComponent, PTileComponent, ProductViewComponent, OrderFormComponent],
+  declarations: [HomeComponent, SidenavComponent, HeaderComponent, PTileComponent, ProductViewComponent, OrderFormComponent, ProductFullViewComponent],
   imports: [
     CommonModule,
     StoreRoutingModule,
@@ -19,6 +22,7 @@ import { MaterialModule } from '../material/material.module';
     OrdersModule,
     MaterialModule
   ],
-  exports:[HeaderComponent,SidenavComponent]
+  exports:[HeaderComponent,SidenavComponent],
+  providers:[OrderService,ProductService]
 })
 export class StorefontModule { }

@@ -8,6 +8,7 @@ import { StoreRoutingModule } from './storefont/store-routing.module';
 import { StorefontModule } from './storefont/storefont.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
 import { MaterialModule } from './material/material.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { MaterialModule } from './material/material.module';
     StoreRoutingModule,
     StorefontModule,
     AuthRoutingModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
 
 
   ],
